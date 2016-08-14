@@ -3,13 +3,17 @@
 <img src="http://frenchy64.github.io/images/automatic-annotations.png"></img>
 
 A demo for Typed Clojure's runtime type inference.
-This work is part of a crowdfunding campaign,
-please contribute 
+
+# Crowdfunding
+
+Please fund this work
 <a href="https://www.indiegogo.com/projects/typed-clojure-automatic-annotations--2/x/4545030#/">here</a>
 to help development!
 
+## Overview
+
 Run your tests, and `clojure.core.typed/runtime-infer`
-will insert
+will insert your annotations.
 
 What follows:
 - 3 examples of inferring types
