@@ -1,6 +1,7 @@
 # Write Tests, Get Types!
 
-<img src="http://frenchy64.github.io/images/automatic-annotations.png"></img>
+<a href="https://www.indiegogo.com/projects/typed-clojure-automatic-annotations--2/x/4545030#/">
+<img src="http://frenchy64.github.io/images/automatic-annotations.png"></img></a>
 
 A demo for Typed Clojure's runtime type inference.
 
