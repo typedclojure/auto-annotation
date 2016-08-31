@@ -1,20 +1,42 @@
 # Write Tests, Get Types!
 
-<a href="https://www.indiegogo.com/projects/typed-clojure-automatic-annotations--2/x/4545030#/">
-<img src="http://frenchy64.github.io/images/automatic-annotations.png"></img></a>
-
 A demo for Typed Clojure's runtime type inference.
-
-# Crowdfunding
-
-Please fund this work
-<a href="https://www.indiegogo.com/projects/typed-clojure-automatic-annotations--2/x/4545030#/">here</a>
-to help development!
 
 ## Overview
 
 Run your tests, and `clojure.core.typed/runtime-infer`
 will insert your annotations.
+
+## Quick start
+
+1. Add these injections to project.clj
+
+```
+  :injections [(require 'clojure.core.typed)
+               (clojure.core.typed/install
+                 #{:load})])
+```
+
+2.  Add {:lang :core.typed} metadata to your ns form.
+
+```
+(ns my-ns
+  {:lang :core.typed}
+  (:require [clojure.repl :as r]))
+```
+
+3. Run your tests from the REPL.
+
+4. Use `clojure.core.typed/runtime-infer` to generate
+   core.typed types in the current namespace.
+
+5. Use `clojure.core.typed/spec-infer` to generate
+   core.typed types in the current namespace.
+
+6. Use `clojure.core.typed/refresh-runtime-infer` to
+   wipe inference results (perhaps from running bad tests).
+
+## Verbose
 
 What follows:
 - 3 examples of inferring types
