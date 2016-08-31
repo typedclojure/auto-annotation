@@ -31,8 +31,8 @@ will insert your annotations.
 4. Use `clojure.core.typed/runtime-infer` to generate
    core.typed types in the current namespace.
 
-5. Use `clojure.core.typed/spec-infer` to generate
-   core.typed types in the current namespace.
+5. use `clojure.core.typed/spec-infer` to generate
+   clojure.spec specs in the current namespace.
 
 6. Use `clojure.core.typed/refresh-runtime-infer` to
    wipe inference results (perhaps from running bad tests).
