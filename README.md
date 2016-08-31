@@ -11,7 +11,7 @@ will insert your annotations.
 
 1. Add these injections to project.clj
 
-   ```
+   ```clojure
      :injections [(require 'clojure.core.typed)
                   (clojure.core.typed/install
                     #{:load})])
@@ -19,7 +19,7 @@ will insert your annotations.
 
 2. Add {:lang :core.typed} metadata to your ns form.
 
-   ```
+   ```clojure
    (ns my-ns
      {:lang :core.typed}
      (:require [clojure.repl :as r]))
