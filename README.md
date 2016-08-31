@@ -17,11 +17,12 @@ will insert your annotations.
                     #{:load})])
    ```
 
-2. Add {:lang :core.typed} metadata to your ns form.
+2. Add this metadata to your ns form.
 
    ```clojure
    (ns my-ns
-     {:lang :core.typed}
+     {:lang :core.typed
+      :core.typed {:features #{:runtime-infer}}}
      (:require [clojure.repl :as r]))
    ```
 
