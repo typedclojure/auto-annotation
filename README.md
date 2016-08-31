@@ -11,19 +11,19 @@ will insert your annotations.
 
 1. Add these injections to project.clj
 
-```
-  :injections [(require 'clojure.core.typed)
-               (clojure.core.typed/install
-                 #{:load})])
-```
+   ```
+     :injections [(require 'clojure.core.typed)
+                  (clojure.core.typed/install
+                    #{:load})])
+   ```
 
-2.  Add {:lang :core.typed} metadata to your ns form.
+2. Add {:lang :core.typed} metadata to your ns form.
 
-```
-(ns my-ns
-  {:lang :core.typed}
-  (:require [clojure.repl :as r]))
-```
+   ```
+   (ns my-ns
+     {:lang :core.typed}
+     (:require [clojure.repl :as r]))
+   ```
 
 3. Run your tests from the REPL.
 
